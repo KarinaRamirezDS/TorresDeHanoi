@@ -1,0 +1,442 @@
+function data(table) {
+  switch (table) {
+    case "Group":
+      return [
+        {
+          id: 1,
+          groupName: "QC Managers",
+          groupDescription: "View all QC submissions",
+          createdDate: "2022-09-15T16:23:43.8",
+          statusId: 1,
+        },
+        {
+          id: 2,
+          groupName: "Test Ian",
+          groupDescription: "Testing",
+          createdDate: "2022-09-15T17:08:21.733",
+          statusId: 1,
+        },
+        {
+          id: 7,
+          groupName: "aloga",
+          groupDescription: "prueba",
+          createdDate: "2006-01-29T00:00:00",
+          statusId: 1,
+        },
+        {
+          id: 52,
+          groupName: "Fremont Mock Users",
+          groupDescription: "Can use Fremont Mock Inventory",
+          createdDate: "2023-02-17T19:02:36.19",
+          statusId: 1,
+        },
+        {
+          id: 53,
+          groupName: "Libertyville Mock Users",
+          groupDescription: "Can use Libertyville Mock Inventory",
+          createdDate: "2023-02-17T19:18:20.81",
+          statusId: 1,
+        },
+        {
+          id: 59,
+          groupName: "ian",
+          groupDescription: "prueba",
+          createdDate: "2022-01-29T00:00:00",
+          statusId: 1,
+        },
+      ];
+
+    case "Permission":
+      return [
+        {
+          id: 1,
+          permissionName: "QC admin",
+          permissionDescription: "Quality Control Administrators",
+          createdDate: "2022-09-15T16:27:10.36",
+          statusId: 1,
+        },
+        {
+          id: 2,
+          permissionName: "Create",
+          permissionDescription: "Create",
+          createdDate: "2006-01-29T00:00:00",
+          statusId: 0,
+        },
+        {
+          id: 20,
+          permissionName: "testf4c082d5-cc2c-404f-892a-509e44cdee33",
+          permissionDescription: "Update",
+          createdDate: "2006-01-29T00:00:00",
+          statusId: 1,
+        },
+        {
+          id: 21,
+          permissionName: "prueba5e0c8ba9-e616-4652-a882-4f1b9fdf2ab5",
+          permissionDescription: "Create",
+          createdDate: null,
+          statusId: 0,
+        },
+        {
+          id: 22,
+          permissionName: "prueba68bfb183-2693-4bd6-a634-2142c44986b7",
+          permissionDescription: "Create",
+          createdDate: null,
+          statusId: 0,
+        },
+        {
+          id: 24,
+          permissionName: "prueba7fe34a60-b203-42c7-9060-974054608367",
+          permissionDescription: "Create",
+          createdDate: null,
+          statusId: 0,
+        },
+        {
+          id: 25,
+          permissionName: "test654140f7-4981-4994-9157-5f0a60db55af",
+          permissionDescription: "Update",
+          createdDate: "2006-01-29T00:00:00",
+          statusId: 0,
+        },
+        {
+          id: 26,
+          permissionName: "pruebaf724faea-577c-4a92-9548-c2e58f14d749",
+          permissionDescription: "Create",
+          createdDate: null,
+          statusId: 0,
+        },
+        {
+          id: 27,
+          permissionName: "prueba1a6efb7d-6beb-4b0a-9f97-9ecb862058f2",
+          permissionDescription: "Create",
+          createdDate: null,
+          statusId: 0,
+        },
+        {
+          id: 29,
+          permissionName: "prueba7e12a4d0-87a9-4988-bb3d-79c63382d6aa",
+          permissionDescription: "Create",
+          createdDate: null,
+          statusId: 0,
+        },
+        {
+          id: 32,
+          permissionName: "prueba95516bf7-8a05-4b7c-a9e9-708c05072023",
+          permissionDescription: "Create",
+          createdDate: null,
+          statusId: 0,
+        },
+      ];
+
+    case "User":
+      return [
+        {
+          id: 1,
+          username: "cmartin",
+          email: "chris.martin@a-smeds.com",
+          lastName: "Martin",
+          firstName: "Chris",
+          createdDate: "2021-06-12T01:24:40.303",
+          customNumber: "44",
+          statusId: 1,
+        },
+        {
+          id: 2,
+          username: "acoello",
+          email: "ana.coello@asmrx.com",
+          lastName: "Coello",
+          firstName: "Ana",
+          createdDate: "2021-06-12T01:25:37.43",
+          customNumber: "48",
+          statusId: 1,
+        },
+        {
+          id: 3,
+          username: "cwagner",
+          email: "charlene.wagner@a-smeds.com",
+          lastName: "Wagner",
+          firstName: "Charlene",
+          createdDate: "2021-06-12T01:26:28.287",
+          customNumber: "50",
+          statusId: 1,
+        },
+        {
+          id: 4,
+          username: "lmonge",
+          email: "laura.monge@asmrx.com",
+          lastName: "Monge",
+          firstName: "Laura",
+          createdDate: "2021-06-12T01:27:11.88",
+          customNumber: "51",
+          statusId: 1,
+        },
+        {
+          id: 5,
+          username: "kruppel",
+          email: "kim.ruppel@a-smeds.com",
+          lastName: "Ruppel",
+          firstName: "Kim",
+          createdDate: "2021-06-12T01:28:07.617",
+          customNumber: "54",
+          statusId: 1,
+        },
+        {
+          id: 6,
+          username: "ecoppock",
+          email: "eric.coppock@asmrx.com",
+          lastName: "Coppock",
+          firstName: "Eric",
+          createdDate: "2021-06-12T01:29:03.677",
+          customNumber: "56",
+          statusId: 1,
+        },
+        {
+          id: 7,
+          username: "tmartel",
+          email: "trena.martel@a-smeds.com",
+          lastName: "Martel",
+          firstName: "Trena",
+          createdDate: "2021-06-12T01:29:56.397",
+          customNumber: "61",
+          statusId: 1,
+        },
+        {
+          id: 8,
+          username: "kroberts",
+          email: "katelyn.roberts@a-smeds.com",
+          lastName: "Roberts",
+          firstName: "Katelyn",
+          createdDate: "2021-06-12T01:30:45.067",
+          customNumber: "64",
+          statusId: 1,
+        },
+        {
+          id: 9,
+          username: "kkane",
+          email: "kayla.kane@a-smeds.com",
+          lastName: "Kane",
+          firstName: "Kayla",
+          createdDate: "2021-06-12T01:31:22.397",
+          customNumber: "66",
+          statusId: 1,
+        },
+        {
+          id: 10,
+          username: "skostal",
+          email: "shell.kostal@a-smeds.com",
+          lastName: "Kostal",
+          firstName: "Shelly",
+          createdDate: "2021-06-21T20:31:55.817",
+          customNumber: null,
+          statusId: 1,
+        },
+        {
+          id: 11,
+          username: "vcaranza",
+          email: "vicente@caranza@a-smeds.com",
+          lastName: "Caranza",
+          firstName: "Vicente",
+          createdDate: "2021-06-21T20:33:10.203",
+          customNumber: null,
+          statusId: 1,
+        },
+        {
+          id: 12,
+          username: "dlupo",
+          email: "dave.lupo@a-smeds.com",
+          lastName: "Lupo",
+          firstName: "David",
+          createdDate: "2021-07-05T18:45:14.587",
+          customNumber: null,
+          statusId: 1,
+        },
+      ];
+
+    default:
+      return null;
+  }
+}
+
+
+let datosActuales =[];
+let body = document.getElementsByTagName("body")[0];
+document.body.style.backgroundColor = "beige";
+
+let botonera = document.createElement("div");
+botonera.id = "botonera";
+body.appendChild(botonera);
+
+let contenedorEdit = document.createElement("div");
+contenedorEdit.id = "contenedorEdit";
+
+let contenedorAdd = document.createElement("div");
+contenedorAdd.id = "contenedorAdd";
+
+//Botones secundarios
+const buttonEditar = document.createElement("button");
+buttonEditar.innerHTML = "EDITAR";
+
+const buttonSave = document.createElement("button");
+buttonSave.innerHTML = "SAVE";
+buttonSave.setAttribute("id","botonSave");
+
+const buttonCancel = document.createElement("button");
+buttonCancel.innerHTML = "CANCEL";
+buttonCancel.setAttribute("id","botonCancel");
+
+//Creacion de tabla
+let tabla = document.createElement("table");
+tabla.border = '1';
+tabla.id= "tabla"
+body.appendChild(tabla);
+
+function crearBoton(texto){
+  const boton = document.createElement('button');
+  boton.innerHTML = texto;
+  boton.addEventListener('click', () => {cambiarTipoDatos(texto)});
+  let botonera = document.getElementById( "botonera");
+  botonera.appendChild(boton);
+  return boton;
+}
+
+function cambiarTipoDatos(tipo){
+  datosActuales = data(tipo);
+  mostrarTabla(datosActuales);
+  body.appendChild(buttonAgregar);
+ 
+}
+
+let tiposData = ['User', 'Group', 'Permission'];
+tiposData.forEach((tipo)=> {
+  crearBoton(tipo)
+}); 
+
+//Mostrar tabla 
+function mostrarTabla() {
+  const body = document.body
+  let tabla = document.getElementById('tabla');
+
+  if(!tabla){
+    tabla = document.createElement('table');
+    tabla.border = "1";
+    tabla.id ='tabla';
+    body.appendChild(tabla);
+  }
+  tabla.innerHTML = '';
+  
+  let encabezadoRow = document.createElement("tr");
+  tabla.appendChild(encabezadoRow);
+  let encabezado = Object.keys(datosActuales[0]);
+  encabezado.forEach(function (encabezado) {
+    let th = document.createElement("th");
+    th.textContent = encabezado;
+    encabezadoRow.appendChild(th);
+  });
+ 
+  datosActuales.forEach((item) => {
+    let fila = tabla.insertRow();
+    for(let dato in item){
+      let celda = fila.insertCell();
+      celda.classList.add('celdaTabla');
+      celda.textContent = item[dato]
+    }
+    const buttonEditar = document.createElement("button");
+    buttonEditar.innerHTML = "EDITAR";
+    fila.appendChild(buttonEditar);
+    buttonEditar.addEventListener("click", () => editarTabla(item.id)); 
+  })
+}
+
+const buttonAgregar = document.createElement("button");
+buttonAgregar.innerHTML = "Add";
+buttonAgregar.addEventListener("click", () => agregarDato());
+
+function editarTabla( idCelda) {
+ let celda = datosActuales.find((element) => element.id == idCelda );
+ document.getElementById(contenedorEdit);
+ body.appendChild(contenedorEdit);
+
+  const newFila = document.createElement("tr");
+  contenedorEdit.appendChild(newFila);
+
+  for (let clave in celda) {
+    let inputEdit = document.createElement("input");
+    inputEdit.setAttribute("type", "text");
+    inputEdit.value = celda[clave];
+    newFila.appendChild(inputEdit);
+  }
+  //BOTONES
+  newFila.appendChild(buttonCancel);
+  newFila.appendChild(buttonSave);
+
+  buttonCancel.addEventListener("click", () => newFila.remove());
+  buttonSave.addEventListener("click", () => botonGuardar(celda, newFila));
+}
+function botonGuardar(celda, newFila) {
+  let inputElements = newFila.querySelectorAll("input");
+  let editedData = []; 
+  document.getElementById("idTh")
+  for (let i = 0; i < inputElements.length; i++) {
+    let key = Object.keys(celda)[i];
+    editedData[key] = inputElements[i].value;
+  }
+  
+  let index = datosActuales.findIndex((item) => item.id === celda.id);
+  console.log(  datosActuales[index] = editedData);
+  datosActuales[index] = editedData; 
+
+  newFila.remove();
+  tabla.innerHTML = ''
+  mostrarTabla(datosActuales);
+}
+
+function agregarDato() {
+  contenedorEdit.innerHTML = '';
+  document.getElementById(contenedorAdd);
+  body.appendChild(contenedorAdd)
+  const newFila = document.createElement("tr");
+  contenedorAdd.innerHTML = '';
+  contenedorAdd.appendChild(newFila);
+
+  const nextId = datosActuales.length > 0 ? +datosActuales[datosActuales.length - 1].id + +1 : 1;
+
+
+  const encabezado = Object.keys(datosActuales[0]);
+  encabezado.forEach(function (clave) {
+    let inputNuevo = document.createElement("input");
+    inputNuevo.setAttribute("type", "text");
+    inputNuevo.placeholder = `Ingresa ${clave}`;
+    inputNuevo.readOnly = ["id", "createdDate", "statusId"].includes(clave);
+
+  
+    if (clave === 'id') {
+      inputNuevo.value = nextId;
+    } else if (clave === 'createdDate') {
+      inputNuevo.value = new Date().toISOString() 
+    } else if (clave === 'statusId') {
+      inputNuevo.value = '1';
+    }
+
+    newFila.appendChild(inputNuevo);
+  });
+
+  newFila.appendChild(buttonCancel);
+  const buttonSaveNuevo = document.createElement("button");
+  buttonSaveNuevo.innerHTML = "SAVE";
+  newFila.appendChild(buttonSaveNuevo);
+
+  buttonCancel.addEventListener("click", () => contenedorAdd.innerHTML = '');
+
+  buttonSaveNuevo.addEventListener("click", () => {
+    let inputElementsNuevo = newFila.querySelectorAll("input");
+    let newData = {};
+
+    encabezado.forEach(function (clave, index) {
+      newData[clave] = inputElementsNuevo[index].value;
+    });
+
+    datosActuales.push(newData);
+    contenedorAdd.innerHTML = '';
+    tabla.innerHTML = '';
+    mostrarTabla(datosActuales);
+  });
+}
