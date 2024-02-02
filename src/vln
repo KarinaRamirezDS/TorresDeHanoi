@@ -1,0 +1,58 @@
+class Autocomplete {
+    constructor(apiUrl) {
+      this.apiUrl = apiUrl;
+      this.inputField = document.getElementById('autocomplete-input');
+      this.resultsContainer = document.getElementById('autocomplete-results');
+  
+      this.inputField.addEventListener('input', this.handleInput.bind(this));
+    }
+  
+    handleInput() {
+      const query = this.inputField.value;
+  
+      if (query.length > 0) {
+        this.fetchResults(query);
+      } else {
+        this.clearResults();
+      }
+    }
+  
+    fetchResults(query) {
+      
+      fetch(`${this.apiUrl}${query}`)
+        .then(response => response.json())
+        .then(data => this.displayResults(data))
+        .catch(error => console.error('Error fetching results:', error));
+    }
+  
+    displayResults(results) {
+      
+      this.clearResults();
+  
+     
+      results.forEach(result => {
+        const resultItem = document.createElement('div');
+        resultItem.textContent = result; 
+        resultItem.addEventListener('click', () => this.handleResultClick(result));
+        this.resultsContainer.appendChild(resultItem);
+      });
+    }
+  
+    handleResultClick(result) {
+  
+      this.inputField.value = result;
+      this.clearResults();
+    }
+  
+    clearResults() {
+    
+      while (this.resultsContainer.firstChild) {
+        this.resultsContainer.removeChild(this.resultsContainer.firstChild);
+      }
+    }
+  }
+  
+
+  const autocomplete = new Autocomplete('https://api.example.com/autocomplete?q=');
+  <input type="text" id="autocomplete-input">
+<div id="autocomplete-results"></div>
